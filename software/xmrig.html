@@ -6,14 +6,14 @@
     <title>Xmrig - OpenCompile</title>
 </head>
 <body>
-    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.10/dist/htmx.min.js"></script>
     <h1>Xmrig - OpenCompile</h1>
     <hr>
 
     <div id="tabs" hx-target="#tab-contents" role="tablist" _="on htmx:afterOnLoad set @aria-selected of <[aria-selected=true]/> to false tell the target take .selected set @aria-selected to true">
 	<button role="tab" aria-controls="tab-content" aria-selected="true" hx-get="/versions/xmrig/v6.21.0.html" class="selected">v6.21.0</button>
 	<button role="tab" aria-controls="tab-content" aria-selected="false" hx-get="/versions/xmrig/v6.20.0.html">v6.20.0</button>
-</div>
+    </div>
 
 <div id="tab-contents" role="tabpanel" hx-get="/versions/xmrig/v6.21.0.html" hx-trigger="load"></div>
 </body>
