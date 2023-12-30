@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coreutils for embedded devices - OpenCompile Mirror">
+    <title>Busybox - OpenCompile</title>
+</head>
+<body>
+    <script src="https://unpkg.com/htmx.org@1.9.10/dist/htmx.min.js"></script>
+    <h1>Busybox - OpenCompile</h1>
+    <hr>
+    <div id="tabs" hx-target="#tab-contents" role="tablist" _="on htmx:afterOnLoad set @aria-selected of <[aria-selected=true]/> to false tell the target take .selected set @aria-selected to true">
+	<button role="tab" aria-controls="tab-content" aria-selected="true" hx-get="/versions/busybox/1.36.0.html" class="selected">1.36.0</button>
+    </div>
+
+<div id="tab-contents" role="tabpanel" hx-get="/versions/busybox/1.36.0.html" hx-trigger="load"></div>
+</body>
+</html>
